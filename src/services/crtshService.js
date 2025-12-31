@@ -3,7 +3,8 @@
  * Mengambil data subdomain berdasarkan domain yang diberikan.
  */
 
-const CRTSH_BASE_URL = 'https://crt.sh';
+// Menggunakan proxy lokal (Vite) atau Netlify Redirects untuk menghindari CORS
+const BASE_URL = '/api/crtsh';
 
 /**
  * Mengambil daftar subdomain dari crt.sh.
@@ -17,7 +18,7 @@ export const fetchSubdomains = async (domain) => {
 
   try {
     // Menggunakan wildcard %.domain untuk mendapatkan semua subdomain
-    const url = `${CRTSH_BASE_URL}/?q=%.${domain}&output=json`;
+    const url = `${BASE_URL}/?q=%.${domain}&output=json`;
     
     const response = await fetch(url);
 
