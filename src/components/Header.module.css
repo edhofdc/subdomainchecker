@@ -1,0 +1,33 @@
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--neon-cyan);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--neon-purple);
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}

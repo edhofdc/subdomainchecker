@@ -1,0 +1,10 @@
+:root {
+  --neon-cyan: #00ffff;
+  --neon-purple: #9d00ff;
+  --bg-dark: #050505;
+  --bg-card: #111111;
+  --text-main: #e0e0e0;
+  --text-muted: #888888;
+  --font-main: 'Orbitron', monospace;
+  --font-mono: 'JetBrains Mono', monospace;
+}
