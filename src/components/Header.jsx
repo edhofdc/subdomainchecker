@@ -7,8 +7,8 @@ import styles from './Header.module.css';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <h1 className={styles.title}>Cyber Subdomain Scanner</h1>
-      <p className={styles.subtitle}>Powered by crt.sh</p>
+      <h1 className={styles.title}>Subdomain Scanner</h1>
+      <p className={styles.subtitle}>Powered by cathunter1337</p>
     </header>
   );
 };
